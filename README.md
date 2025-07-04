@@ -9,6 +9,7 @@ Durante o curso, estou aprendendo e aplicando conhecimentos em desenvolvimento d
 ## 💻 Tecnologias e linguagens abordadas
 
 - C
+- Python
 - Java
 - JavaScript
 - HTML
