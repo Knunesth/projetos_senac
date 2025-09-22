@@ -1,14 +1,29 @@
-USE ecommerce;
--- 1 criando procedure para listar produtos por categoria
-DEMILITER //
+DELIMITER //
 
-CREATE PROCEDURE listarProdutos_por_categoria(IN categoria_id_param INT)
+CREATE PROCEDURE listar_produtos_por_categoria(IN categoria_id_param INT)
 BEGIN
-	SELECT p.nome, p.preco, p.estoque, c.nome as categoria
-    FROM produto as p
-    JOIN categorias as C on p.categoria_id = c.id
-	WHERE p.categoria_id = categoria_id_param;
-
+    SELECT p.nome, p.preco, p.estoque, c.nome AS categoria
+    FROM produtos AS p
+    JOIN categorias AS c ON p.categoria_id = c.id
+    WHERE p.categoria_id = categoria_id_param;
 END //
 
-DEMILITER;
+DELIMITER ;
+
+CALL listar_produtos_por_categoria(1);
+
+DELIMITER //
+
+CREATE PROCEDURE atualizar_preco_categoria(
+    IN categoria_id_param INT,
+    IN novo_preco DECIMAL(10, 2)
+)
+BEGIN
+    UPDATE produtos
+    SET preco = novo_preco
+    WHERE categoria_id = categoria_id_param;
+END //
+
+DELIMITER ;
+
+CALL atualizar_preco_categoria(3, 150.00);
