@@ -1,79 +1,54 @@
-# Curso Técnico em Desenvolvimento de Sistemas | Senac DF
+Curso Técnico em Desenvolvimento de Sistemas | Senac DF
 
-Este repositório reúne atividades, projetos e exercícios desenvolvidos ao longo do curso Técnico em Desenvolvimento de Sistemas, realizado no Senac DF.
+📄 Visão Geral
 
-Durante o curso, estou aprendendo e aplicando conhecimentos em desenvolvimento de software com foco em lógica de programação, estrutura de dados, aplicações web, mobile e desktop, utilizando linguagens como C, Java, JavaScript, HTML e CSS.
+Este repositório serve como um portfólio digital, reunindo as atividades, projetos, e exercícios práticos desenvolvidos durante o Curso Técnico em Desenvolvimento de Sistemas no Senac DF.
 
----
+O curso foca na formação de profissionais aptos a atuar no desenvolvimento de software, abrangendo desde a lógica de programação e estrutura de dados até a construção de aplicações web, mobile e desktop, utilizando um conjunto diversificado de tecnologias e linguagens de programação.
 
-## 💻 Tecnologias e linguagens abordadas
+💻 Habilidades e Tecnologias Adquiridas
 
-- C
-- Python
-- Java
-- JavaScript
-- HTML
-- CSS
-- Bootstrap
-- Banco de Dados (MySQL ou PostgreSQL)
+A grade curricular aborda o domínio e a aplicação prática das seguintes tecnologias e linguagens de programação:
 
----
+    Linguagens de Programação: C, Python, Java, JavaScript
 
-## 🧠 Conteúdos estudados
+    Front-end: HTML, CSS, Bootstrap
 
-### ✅ Módulo 1 – Finalizando
+    Banco de Dados: Modelagem, SQL (MySQL)
 
-#### 🔸 Lógica de Programação
-- Pseudocódigos
-- Fluxogramas
-- Estruturas de decisão e repetição
-- Vetores e matrizes
-- Funções em C
+    Controle de Versão: Git e GitHub
 
-#### 🔸 Engenharia de Requisitos
-- Análise de requisitos
-- Modelagem com diagramas UML
-- Definição de escopo com cliente
-- Casos de uso
+🧠 Conteúdo Programático
 
-#### 🔸 Introdução à Gestão de Projetos
-- Refinamento de escopo
-- Participação em reuniões
-- Etapas do ciclo de desenvolvimento
+O curso está estruturado em módulos, cobrindo as seguintes áreas de conhecimento:
 
----
+✅ Módulo 1 – Concluído
 
-### 🔄 Módulo 2 – Em andamento
+Área de Estudo	Tópicos Principais
+Lógica de Programação	Pseudocódigos, Fluxogramas, Estruturas de Decisão e Repetição, Vetores e Matrizes, Funções em C.
+Engenharia de Requisitos	Análise de Requisitos, Modelagem com Diagramas UML, Definição de Escopo, Casos de Uso.
+Introdução à Gestão de Projetos	Refinamento de Escopo, Participação em Reuniões, Etapas do Ciclo de Desenvolvimento de Software.
 
-#### 🔸 Programação Estruturada e Orientada a Objetos
-- Diferença entre programação estruturada e POO
-- Solução de problemas com algoritmos
-- Introdução a Java
+🔄 Módulo 2 – Em Andamento
 
-#### 🔸 Banco de Dados
-- Criação e manutenção de bases de dados
-- Modelagem relacional
-- Tipos de banco de dados
-- SGBDs
+Área de Estudo	Tópicos Principais
+Programação	Programação Estruturada vs. Orientada a Objetos (POO), Solução de Problemas com Algoritmos, Introdução à Linguagem Java.
+Banco de Dados	Criação e Manutenção de Bases de Dados, Modelagem Relacional, Tipos de Banco de Dados, Sistemas Gerenciadores de Banco de Dados (SGBDs).
+Desenvolvimento de Aplicações	Aplicações Web (HTML, CSS, JavaScript), Aplicações Desktop (Java), Conexão de Aplicações com Banco de Dados, Versionamento (Git e GitHub).
+Projeto Integrador	Desenvolvimento de Soluções Práticas para Problemas Reais, Planejamento e Apresentação de Resultados Técnicos.
 
-#### 🔸 Desenvolvimento de Aplicações
-- Aplicações Web: HTML, CSS, JavaScript
-- Aplicações Desktop: Java
-- Conexão com banco de dados
-- Versionamento com Git e GitHub
+🛠️ Ferramentas de Desenvolvimento
 
-#### 🔸 Projeto Integrador
-- Desenvolvimento de soluções práticas baseadas em problemas reais
-- Planejamento e apresentação de resultados
+As seguintes ferramentas são utilizadas no ambiente de desenvolvimento e prototipagem:
 
----
+    Editores de Código: Visual Studio Code e Eclipse
 
-## 🛠️ Ferramentas utilizadas
+    Controle de Versão: Git e GitHub
 
-- Visual Studio Code
-- Code::Blocks
-- Git & GitHub
-- Figma (para prototipagem)
-- MySQL / DBeaver
-- IDEs: Eclipse, NetBeans ou IntelliJ
----
+    Prototipagem: Figma, Draw.io
+
+    Banco de Dados: MySQL
+
+    IDEs Java: Eclipse, NetBeans ou IntelliJ
+
+Este repositório é atualizado continuamente, acompanhando o progresso e a conclusão dos módulos e projetos.
