@@ -1,0 +1,142 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #fafafa;
+}
+
+/* Cabeçalho */
+header {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0.5rem 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Seções principais */
+main {
+    padding: 2rem 1rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* Galeria */
+.galeria .grid-fotos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+figure {
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+figure:hover {
+    transform: scale(1.03);
+}
+
+figure img {
+    width: 100%;
+    display: block;
+}
+
+figcaption {
+    text-align: center;
+    padding: 0.5rem;
+    background: #eee;
+}
+
+/* Sobre */
+.sobre, .contato {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* Botão de contato */
+.btn-contato {
+    display: inline-block;
+    background: #222;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background 0.3s;
+}
+
+.btn-contato:hover {
+    background: #ffcc00;
+    color: #000;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #222;
+    color: #fff;
+    margin-top: 3rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
