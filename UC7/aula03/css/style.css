@@ -1,0 +1,138 @@
+/* ===== ESTILO GLOBAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background: linear-gradient(180deg, #f0f4ff, #ffffff);
+  scroll-behavior: smooth;
+}
+
+/* ===== CABEÇALHO ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4C46F5;
+  color: #fff;
+  padding: 15px 10%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+header .logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+header .logo span {
+  color: #A7F3D0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #A7F3D0;
+}
+
+/* ===== HERO ===== */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #4C46F5, #A7F3D0);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #fff;
+  color: #4C46F5;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #A7F3D0;
+  color: #333;
+}
+
+/* ===== SEÇÕES ===== */
+section {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+section h2 {
+  color: #4C46F5;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+section p {
+  max-width: 700px;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+}
+
+section img {
+  width: 70%;
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* ===== CARDS ===== */
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 25px;
+  margin: 15px auto;
+  width: 80%;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+  background-color: #4C46F5;
+  color: white;
+  padding: 40px 10%;
+  text-align: center;
+}
+
+footer a {
+  color: #A7F3D0;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
