@@ -1,73 +1,195 @@
-.navbar{
+/* Banner */
+/* Importando uma fonte moderna do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+/* --- Seção Hero --- */
+.hero-section {
+    position: relative;
+    height: 80vh;
+    background: url('../imgs/index-IMGs/jk.jpg') no-repeat center center/cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Escurece a imagem para o texto ser legível */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content .btn-outline-light {
+    border-width: 2px;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+}
+
+.hero-content .btn-outline-light:hover {
     background-color: #fff;
+    color: #000;
+}
+
+/* --- Seção da Galeria --- */
+.gallery-section {
+    background-color: #fff;
+}
+
+.gallery-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.gallery-card:hover img {
+        transform: scale(1.05);   
+}
+
+.gallery-card .card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: #fff;
+    transform: translateY(100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.gallery-card:hover .card-content {
+    transform: translateY(0);
+}
+
+.gallery-card .card-title {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.gallery-card .card-text {
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: opacity 0.3s ease 0.2s; 
+}
+
+.gallery-card:hover .card-text {
+    opacity: 1;
+}
+
+/* --- Seção de Navegação --- */
+.navigation-section {
+    background-color: #f8f9fa;
+}
+
+.nav-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.nav-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+}
+
+.nav-card .nav-icon {
+  color: #007bff; /* Cor primária do Bootstrap */
+    transition: color 0.3s ease;
+}
+
+.nav-card:hover .nav-icon {
+    color: #0056b3;
+}
+
+.nav-card h4 a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+    from {
+    opacity: 0;
+    transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Navbar efeito dinâmico */
+.navbar {
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
     height: 80px;
 }
 
-.container-fluid .navbar-brand{
-    font-weight: bold;
-    color: #00ad0e;      
-}
-
-.login-button{
-    background-color: #bbc952;
-    color: white;
-    font-size: 14px;
-    padding: 8px 20px;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: 0.35s ease-in-out;
-}
-
-.login-button:hover{    
-    background-color: #A8B545;
-    filter: drop-shadow(2px 2px rgba(0, 0, 0, 0.87));
-    transition: 0.1s ease-in-out;
-}
-
-.logoff-button{
-    text-decoration: none;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    margin: 1%;
-    padding: 5px 15px;
-    background-color: #32a128 ;
-    border-radius: 10px;
-}
-
-.navbar-togger {
-    border: none;
-    font-size: 1.23rem;
-}
-
-.navbar-togger:focus, .btn-close:focus{
+/* Estado inicial - transparente */
+.navbar-transparent {
+    background-color: transparent !important;
     box-shadow: none;
-    outline: none;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 }
 
-.nav-item{
-    color: #666777;
-    font-weight: 500;
-}
-.nav-item:active{
-    color: #ff0000;
-    text-decoration: 3px underline #a8adb3;
+.navbar-transparent .nav-link,
+.navbar-transparent .login-button {
+    color: #fff !important;
+    text-shadow: 0 0 5px rgba(0,0,0,0.6);
 }
 
-
-/*Responsividade - NavBar*/
-@media (min-width: 991px){
-    .nav-item > a{
-        transition: .3s;
-    }
-    
-    .nav-item > a:hover{
-        text-decoration: 3px underline #004aad; 
-        transition: .3s;
-        color: #000;
-    }
+/* Estado após rolar */
+.navbar-scrolled {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    backdrop-filter: blur(10px);
 }
 
+.navbar-scrolled .nav-link {
+    color: #000 !important;
+}
 
+.navbar-scrolled .login-button {
+    background-color: #00437a;
+    padding: 0.5rem;
+    border-radius: 30px;
+    color: white !important;
+}
+
+/*
+  ================================================
+  FOOTER STYLES
+  ================================================
+*/
 
 footer{
     width: 100%;

@@ -1,148 +1,217 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- links externos -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-    />
-    <!-- fim links externos -->
-    <link rel="stylesheet" href="css/style.css">
-    <title>Explore Brasília</title>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Bootstrap & Font Awesome -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+/>
+<link rel="stylesheet" href="css/style.css" />
+<title>Explore Brasília</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="imgs/icon.png" width="50" alt=""></a>
-            <div
-                class="offcanvas offcanvas-end"
-                tabindex="-1"
-                id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel"
-            >
-                <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                    <img width="200px" src="../gerais/imgs/logo_SCN.icon" alt="" />
-                </h5>
-                <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="offcanvas"
-                    aria-label="Close"
-                ></button>
-                </div>
-                <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                    <li class="nav-item">
-                    <a class="nav-link mx-lg-2 active" aria-current="page" href="home.html">Home</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                    <a class="nav-link mx-lg-2" href="serviços/servicos.html">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link mx-lg-2" href="comunidade/comunidade.html">Comunidade</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link mx-lg-2" href="sobre/sobre.html">Sobre</a>
-                    </li>
-                </ul>
-                </div>
-            </div>
-            <a href="login/login.html" class="login-button">Login</a>
-            <a href="/logoff" style="display: none" class="logoff-button">Sair</a>
-            
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar"
-                aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            </div>
-        </nav>
-    </header>
-        <!-- NavBar - Fim -->
+<!-- ========== NAVBAR FIXA ========== -->
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-transparent">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="imgs/icon.png" width="50" alt="">
+        </a>
     
-        
-    <!-- Footer - Ínicio -->
-    <footer>
-        <div id="footer_content">
-            <div id="footer_contacts">
-            <div class="img-logo-footer">
-                <img width="120px" src="imgs/icon.png" alt="" />
+        <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+        >
+            <div class="offcanvas-header">
+            <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+            ></button>
             </div>
-            <p>Conectando você às principais notícias de Samambaia.</p>
-
-            <div id="footer_social_media">
-                <a href="#" class="footer-link" id="instagram">
-                <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="#" class="footer-link" id="whatsapp">
-                <i class="fa-brands fa-whatsapp"></i>
-                </a>
-                <a href="#" class="footer-link" id="x-twitter">
-                <i class="fa-brands fa-x-twitter"></i>
-                </a>
-            </div>
-            </div>
-
-            <ul class="footer-list">
-            <li>
-                <h3>Informações</h3>
-            </li>
-            <li>
-                <a href="sobre/sobre.html" class="footer-link">Sobre Nós</a>
-            </li>
-            <li>
-                <a href="#" class="footer-link">Trabalhe Conosco</a>
-            </li>
+            <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                <a class="nav-link mx-lg-2 active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="paginas (html)/serviços.html">Serviços</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="paginas (html)/blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="paginas (html)/sobre.html">Sobre</a>
+                </li>
             </ul>
+            </div>
+        </div>
+    
+        <a href="login/login.html" class="login-button">Login</a>
+        <a href="/logoff" style="display: none" class="logoff-button">Sair</a>
+    
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+    </nav>      
+</header>
 
-            <ul class="footer-list">
-            <li>
-                <h3>Ajuda</h3>
-            </li>
-            <li>
-                <a href="comunidade/comunidade.html" class="footer-link">FAQ's</a>
-            </li>
-            <li>
-                <a href="Termos_de_uso/tdu.html" class="footer-link">Termos de Uso</a>
-            </li>
-            <li>
-                <a href="Termos_de_uso/tdu.html" class="footer-link">Política de Privacidade</a>
-            </li>
-            </ul>
+<main>
+    <section class="hero-section text-white text-center d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1 class="display-3 fw-bold">Explore o Coração do Brasil</h1>
+        <p class="lead">Arquitetura, cultura e poder em cada canto de Brasília.</p>
+        <a href="#descubra" class="btn btn-outline-light btn-lg mt-3">Descubra a Capital</a>
+    </div>
+    </section>
 
-            <div id="footer_subscribe">
-            <h3>Notícias</h3>
-
-            <p>
-                Insira seu e-mail para ser notificado das notícias<br />e novidades
-                em Samambaia.
-            </p>
-
-            <div id="input_group">
-                <input type="email" id="email" />
-                <button>
-                <i class="fa-regular fa-envelope"></i>
-                </button>
+    <section id="descubra" class="gallery-section py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+        <h2 class="fw-bold">Brasília em Destaque</h2>
+        <p class="text-muted">Três ícones que definem a paisagem da capital.</p>
+        </div>
+        <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+            <div class="gallery-card">
+            <img src="imgs/index-IMGs/catedral.webp" alt="Catedral de Brasília">
+            <div class="card-content">
+                <h5 class="card-title">Catedral Metropolitana</h5>
+                <p class="card-text">Uma obra-prima de Oscar Niemeyer, com seus arcos de concreto e vitrais que se elevam aos céus.</p>
             </div>
             </div>
         </div>
-        <div id="footer_copyright">&copy; 2025 Todos os Direitos Reservados</div>
-    </footer>
-    <!-- Footer - Fim -->
+        <div class="col-lg-4 col-md-6">
+            <div class="gallery-card">
+            <img src="imgs/index-IMGs/congresso_do_brasil_ebc.jpg" alt="Congresso Nacional">
+            <div class="card-content">
+                <h5 class="card-title">Congresso Nacional</h5>
+                <p class="card-text">O centro do poder legislativo, um monumento icônico que representa a democracia brasileira.</p>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+            <div class="gallery-card">
+            <img src="imgs/index-IMGs/museu-nacional-da-republica.jpg" alt="Museu Nacional">
+            <div class="card-content">
+                <h5 class="card-title">Museu Nacional</h5>
+                <p class="card-text">Um espaço futurista dedicado à arte, cultura e ciência, com exposições que inspiram.</p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="navigation-section py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+        <h2 class="fw-bold">Planeje sua Visita</h2>
+        <p class="text-muted">Encontre tudo o que precisa para uma experiência inesquecível.</p>
+        </div>
+        <div class="row g-4">
+        <div class="col-lg-4">
+            <div class="nav-card text-center p-4">
+            <div class="nav-icon mb-3">
+                <i class="fa-solid fa-monument fa-3x"></i>
+            </div>
+            <h4 class="fw-bold"><a href="pontos.html" class="stretched-link">Pontos Turísticos</a></h4>
+            <p>Descubra os monumentos e espaços que contam a história de Brasília.</p>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="nav-card text-center p-4">
+            <div class="nav-icon mb-3">
+                <i class="fa-solid fa-utensils fa-3x"></i>
+            </div>
+            <h4 class="fw-bold"><a href="gastronomia.html" class="stretched-link">Gastronomia</a></h4>
+            <p>Explore os sabores únicos da culinária local e da alta gastronomia.</p>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="nav-card text-center p-4">
+            <div class="nav-icon mb-3">
+                <i class="fa-solid fa-masks-theater fa-3x"></i>
+            </div>
+            <h4 class="fw-bold"><a href="cultura.html" class="stretched-link">Cultura & Lazer</a></h4>
+            <p>Mergulhe na vibrante cena cultural e nas curiosidades da capital.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+</main>
+
+<!-- ========== FOOTER ORIGINAL ========== -->
+<footer>
+    <div id="footer_content">
+    <div id="footer_contacts">
+        <div class="img-logo-footer">
+        <img width="120px" src="imgs/icon.png" alt="logo-footer" />
+        </div>
+        <p>Conectando você às principais notícias e atrações de Brasília.</p>
+        <div id="footer_social_media">
+        <a href="#" class="footer-link" id="instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="footer-link" id="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" class="footer-link" id="x-twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </div>
+
+    <ul class="footer-list">
+        <li><h3>Informações</h3></li>
+        <li><a href="sobre/sobre.html" class="footer-link">Sobre Nós</a></li>
+        <li><a href="#" class="footer-link">Trabalhe Conosco</a></li>
+    </ul>
+
+    <ul class="footer-list">
+        <li><h3>Ajuda</h3></li>
+        <li><a href="comunidade/comunidade.html" class="footer-link">FAQ's</a></li>
+        <li><a href="Termos_de_uso/tdu.html" class="footer-link">Termos de Uso</a></li>
+        <li><a href="Termos_de_uso/tdu.html" class="footer-link">Política de Privacidade</a></li>
+    </ul>
+
+    <div id="footer_subscribe">
+        <h3>Notícias</h3>
+        <p>Insira seu e-mail para ser notificado sobre novidades em Brasília.</p>
+        <div id="input_group">
+        <input type="email" id="email" placeholder="Digite seu e-mail" />
+        <button><i class="fa-regular fa-envelope"></i></button>
+        </div>
+    </div>
+    </div>
+    <div id="footer_copyright">&copy; 2025 Todos os Direitos Reservados - Explore Brasília</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar");
+    if (window.scrollY > 50) {
+        navbar.classList.add("navbar-scrolled");
+        navbar.classList.remove("navbar-transparent");
+    } else {
+        navbar.classList.add("navbar-transparent");
+        navbar.classList.remove("navbar-scrolled");
+    }
+    });
+</script>
+
 </body>
 </html>
