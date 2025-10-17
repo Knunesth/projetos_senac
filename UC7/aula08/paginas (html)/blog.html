@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- links externos -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link
         rel="stylesheet"
@@ -13,15 +12,14 @@
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
     />
-    <!-- fim links externos -->
     <link rel="stylesheet" href="../css/style.css">
-    <title>Explore Brasília - blog</title>
+    <title>Explore Brasília - Blog</title>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><img src="../imgs/icon.png" width="50" alt=""></a>
+            <a class="navbar-brand" href="../index.html"><img src="../imgs/icon.png" width="50" alt="Logo Explore Brasília"></a>
             <div
                 class="offcanvas offcanvas-end"
                 tabindex="-1"
@@ -39,9 +37,8 @@
                 <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                     <li class="nav-item">
-                    <a class="nav-link mx-lg-2" aria-current="page" href="../imgs/icon.png">Home</a>
+                    <a class="nav-link mx-lg-2" aria-current="page" href="../index.html">Home</a>
                     </li>
-                    
                     <li class="nav-item">
                     <a class="nav-link mx-lg-2" href="serviços.html">Serviços</a>
                     </li>
@@ -70,10 +67,101 @@
             </div>
         </nav>
     </header>
-        <!-- NavBar - Fim -->
+        <main class="container" style="padding-top: 110px; padding-bottom: 4rem;">
+        <section class="text-center mb-5">
+            <h1 class="display-5 fw-bold mb-3">Blog: Fique por Dentro de Brasília</h1>
+            <p class="lead text-muted">
+                Artigos, dicas e curiosidades para você explorar o melhor da capital federal.
+            </p>
+        </section>
 
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card mb-4 shadow-sm">
+                    <img src="../imgs/blogIMGs/Arquitetura de Niemeyer.jpg" class="card-img-top" alt="Arquitetura de Niemeyer">
+                    <div class="card-body">
+                        <h2 class="h4 card-title">A Arquitetura de Niemeyer: Um Passeio pelos Ícones de Brasília</h2>
+                        <p class="text-muted small">Postado em 15 de Outubro de 2025 por Ana Beatriz</p>
+                        <p class="card-text">Descubra as curvas e os traços geniais de Oscar Niemeyer que definem a paisagem urbana de Brasília. Deixe-se levar por um tour arquitetônico inesquecível.</p>
+                        <a href="#" class="btn btn-primary">Leia Mais &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <img src="../imgs/blogIMGs/prato de comida do cerrado.webp" class="card-img-top" alt="Prato de comida do cerrado">
+                    <div class="card-body">
+                        <h2 class="h4 card-title">Sabores do Cerrado: Onde Encontrar a Melhor Gastronomia na Capital</h2>
+                        <p class="text-muted small">Postado em 12 de Outubro de 2025 por Kauã Thierry</p>
+                        <p class="card-text">A culinária de Brasília vai muito além da política. Explore restaurantes que valorizam ingredientes locais como pequi, baru e cagaita, e surpreenda seu paladar.</p>
+                        <a href="#" class="btn btn-primary">Leia Mais &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <img src="../imgs/blogIMGs/Parque_da_Cidade_-_Brasilia_-_DF_-_panoramio_(9).jpg" class="card-img-top" alt="Parque da Cidade em Brasília">
+                    <div class="card-body">
+                        <h2 class="h4 card-title">Parque da Cidade: O Pulmão Verde e o Lazer de Brasília</h2>
+                        <p class="text-muted small">Postado em 10 de Outubro de 2025 por Larissa Souza</p>
+                        <p class="card-text">Conheça todas as opções de lazer, esporte e cultura que o Parque da Cidade Sarah Kubitschek oferece. Um guia completo para aproveitar o maior parque urbano da América Latina.</p>
+                        <a href="#" class="btn btn-primary">Leia Mais &rarr;</a>
+                    </div>
+                </div>
+
+                <nav aria-label="Navegação das postagens">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled"><a class="page-link" href="#">Anterior</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Próxima</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">Pesquisar</div>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Digite aqui...">
+                            <button class="btn btn-secondary" type="button">Ir!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">Categorias</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#" class="text-decoration-none">Cultura</a></li>
+                                    <li><a href="#" class="text-decoration-none">Gastronomia</a></li>
+                                    <li><a href="#" class="text-decoration-none">Lazer</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#" class="text-decoration-none">Arquitetura</a></li>
+                                    <li><a href="#" class="text-decoration-none">Eventos</a></li>
+                                    <li><a href="#" class="text-decoration-none">Dicas</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm bg-light">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Explore Brasília</h5>
+                        <p class="card-text">Seu portal para descobrir e se conectar com o coração do Brasil. Notícias, eventos e cultura local em um só lugar.</p>
+                        <a href="sobre.html" class="btn btn-outline-dark">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
         
-    <!-- Footer - Ínicio -->
     <footer>
         <div id="footer_content">
             <div id="footer_contacts">
@@ -99,12 +187,9 @@
             <li>
                 <h3>Informações</h3>
             </li>
-            <li>
-                <a href="sobre/sobre.html" class="footer-link">Sobre Nós</a>
-            </li>
-            <li>
-                <a href="#" class="footer-link">Trabalhe Conosco</a>
-            </li>
+                <li><a href="sobre.html" class="footer-link">Sobre Nós</a></li>
+                <li><a href="serviços.html" class="footer-link">Serviços</a></li>
+                <li><a href="blog.html" class="footer-link">Blog</a></li>
             </ul>
 
             <ul class="footer-list">
@@ -112,13 +197,13 @@
                 <h3>Ajuda</h3>
             </li>
             <li>
-                <a href="comunidade/comunidade.html" class="footer-link">FAQ's</a>
+                <a href="erro.html" class="footer-link">FAQ's</a>
             </li>
             <li>
-                <a href="Termos_de_uso/tdu.html" class="footer-link">Termos de Uso</a>
+                <a href="erro.html" class="footer-link">Termos de Uso</a>
             </li>
             <li>
-                <a href="Termos_de_uso/tdu.html" class="footer-link">Política de Privacidade</a>
+                <a href="erro.html" class="footer-link">Política de Privacidade</a>
             </li>
             </ul>
 
@@ -140,7 +225,7 @@
         </div>
         <div id="footer_copyright">&copy; 2025 Todos os Direitos Reservados</div>
     </footer>
-    <!-- Footer - Fim -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script>
         window.addEventListener("scroll", function () {
         const navbar = document.querySelector(".navbar");
