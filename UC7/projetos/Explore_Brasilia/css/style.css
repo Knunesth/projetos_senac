@@ -1,0 +1,345 @@
+/* Banner */
+/* Importando uma fonte moderna do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+/* --- Seção Hero --- */
+.hero-section {
+    position: relative;
+    height: 80vh;
+    background: url('../imgs/index-IMGs/jk.jpg') no-repeat center center/cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Escurece a imagem para o texto ser legível */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content .btn-outline-light {
+    border-width: 2px;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+}
+
+.hero-content .btn-outline-light:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* --- Seção da Galeria --- */
+.gallery-section {
+    background-color: #fff;
+}
+
+.gallery-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.gallery-card:hover img {
+        transform: scale(1.05);   
+}
+
+.gallery-card .card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: #fff;
+    transform: translateY(100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.gallery-card:hover .card-content {
+    transform: translateY(0);
+}
+
+.gallery-card .card-title {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.gallery-card .card-text {
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: opacity 0.3s ease 0.2s; 
+}
+
+.gallery-card:hover .card-text {
+    opacity: 1;
+}
+
+/* --- Seção de Navegação --- */
+.navigation-section {
+    background-color: #f8f9fa;
+}
+
+.nav-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.nav-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+}
+
+.nav-card .nav-icon {
+  color: #007bff; /* Cor primária do Bootstrap */
+    transition: color 0.3s ease;
+}
+
+.nav-card:hover .nav-icon {
+    color: #0056b3;
+}
+
+.nav-card h4 a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+    from {
+    opacity: 0;
+    transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Navbar efeito dinâmico */
+.navbar {
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+    height: 80px;
+}
+
+/* Estado inicial - transparente */
+.navbar-transparent {
+    background-color: transparent !important;
+    box-shadow: none;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar-transparent .nav-link,
+.navbar-transparent .login-button {
+    color: #fff !important;
+    text-shadow: 0 0 5px rgba(0,0,0,0.6);
+}
+
+/* Estado após rolar */
+.navbar-scrolled {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-scrolled .nav-link {
+    color: #000 !important;
+}
+
+.navbar-scrolled .login-button {
+    background-color: #00437a;
+    padding: 0.5rem;
+    border-radius: 30px;
+    color: white !important;
+}
+
+/*
+  ================================================
+  FOOTER STYLES
+  ================================================
+*/
+
+footer{
+    width: 100%;
+    margin-top: 10%;
+    color: var(--color-neutral-40);
+    box-shadow: 1px 1px 20px black;
+}
+
+.footer-link i{
+    text-decoration: none;
+    color: white;
+}
+
+#footer_content{
+    background-color: var(--color-neutral-10);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1{
+    margin-bottom: .75rem;
+}
+
+.img-logo-footer{
+    text-align: center;
+}
+
+.img-logo-footer img{
+    filter: drop-shadow(1px 1px 4px rgb(0, 34, 66));
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer_social_media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: .4s;
+}
+
+#footer_social_media .footer-link i{
+    font-size: 1.25rem;
+}
+
+#footer_social_media .footer-link:hover{
+    opacity: .8;
+}
+
+#instagram{
+    background: linear-gradient(#7f37c9, #ff2992, #ff9007);
+}
+
+#whatsapp{
+    background-color: #25d366;
+}
+
+#x-twitter{
+    background-color: #0e0c0c;
+} 
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link{
+    color: var(--color-neutral-30);
+}
+
+.footer-list .footer-link:hover{
+    color: #00000094;
+    text-decoration: underline;
+}
+
+#footer_subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer_subscribe p{
+    color: var(--color-neutral-30);
+}
+
+#input_group{
+    display: flex;
+    align-items: center;
+    background-color: var(--color-neutral-0);
+    border-radius: 4px;
+}
+
+#input_group input{
+    all: unset;
+    padding: .75rem;
+    width: 100%;
+}
+
+#input_group button{
+    background-color: #C08519;
+    border: none;
+    color: var(--color-neutral-40);
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+#input_group button:hover{
+    opacity: 1.8;
+}
+
+#footer_copyright{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    font-size: .9rem;
+    padding-bottom: 1.0rem; 
+    font-weight: 100;
+}
+
+
+/*Responsividade - Footer*/
+@media screen and (max-width: 768px){
+    #footer_content{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px){
+    #footer_content{
+        grid-template-columns: 1fr;
+        padding: 3rem 2rem;
+    }
+}
+/* Rodapé - Fim */
