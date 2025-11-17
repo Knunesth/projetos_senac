@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Importa o módulo express
 const express = require("express");
 
@@ -42,4 +43,50 @@ app.post("/usuarios", (req, res) => {
 // Inicia o servidor
 app.listen(PORT, () => {
   console.log(`Servidor rodando em http://localhost:${PORT}`);
+=======
+// Importa o módulo express
+const express = require("express");
+
+// Inicializa o app
+const app = express();
+
+// Middleware para tratar JSON
+app.use(express.json());
+
+// Porta do servidor
+const PORT = 3000;
+
+// "Banco de dados" temporário
+let usuarios = [
+  { id: 1, nome: "Maria" },
+  { id: 2, nome: "João" },
+];
+
+// Rota GET - listar usuarios
+app.get("/usuarios", (req, res) => {
+  res.status(200).json(usuarios);
+});
+
+// Rota POST - adicionar novo usuário
+app.post("/usuarios", (req, res) => {
+  const { nome } = req.body;
+
+  if (!nome) {
+    return res.status(400).json({ erro: "O campo 'nome' é obrigatório." });
+  }
+
+  const novoUsuario = {
+    id: usuarios.length + 1,
+    nome
+  };
+
+  usuarios.push(novoUsuario);
+
+  res.status(201).json({ mensagem: "Usuário adicionado com sucesso!", usuario: novoUsuario });
+});
+
+// Inicia o servidor
+app.listen(PORT, () => {
+  console.log(`Servidor rodando em http://localhost:${PORT}`);
+>>>>>>> ee680172c2d9ab78dfb79d3573d84e9f53fe1fce
 });

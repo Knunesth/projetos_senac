@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Dia 12/11/2025
 
 // Criando API Node JS
@@ -33,4 +34,41 @@ app.post("/usuarios", (req, res) => {
 
 app.listen(port, () => {
     console.log(`Servidor rodando em http://localhost:${port}`)
+=======
+// Dia 12/11/2025
+
+// Criando API Node JS
+const express = require('express');
+const app = express();
+
+app.use(express.json());
+
+const port = 3000;
+
+// Criando Rotas
+let users = [
+    {id: 1, nome: 'Cleber'},
+    {id: 2, nome: 'Bianca'},
+    {id: 3, nome: 'Jão'}
+];
+
+// Rota GET
+app.get("/usuarios", (req, res) => {
+    res.json(users);
+})
+
+// Rota POST
+app.post("/usuarios", (req, res) => {
+    const novoUsuario = {
+        id: users.length + 1,
+        nome: req.body.nome
+    };
+
+    users.push(novoUsuario);
+    res.status(201).json(`Novo usuario adicionado ${novoUsuario}`);
+})
+
+app.listen(port, () => {
+    console.log(`Servidor rodando em http://localhost:${port}`)
+>>>>>>> ee680172c2d9ab78dfb79d3573d84e9f53fe1fce
 });
