@@ -1,0 +1,225 @@
+@import "./variables.css";
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family: 'Segoe UI', sans-serif;
+background:var(--bege);
+color:#333;
+line-height:1.6;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+/* CONTAINER */
+
+section{
+padding:80px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+/* TITLES */
+
+h1{
+font-size:2.5rem;
+margin-bottom:20px;
+color:var(--marrom);
+}
+
+h2{
+font-size:2rem;
+margin-bottom:30px;
+color:var(--marrom);
+text-align:center;
+}
+
+h3{
+margin-bottom:10px;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:var(--marrom);
+color:white;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.navbar h2{
+color:white;
+font-size:1.4rem;
+}
+
+.links{
+display:flex;
+gap:20px;
+}
+
+.links a{
+color:white;
+text-decoration:none;
+font-size:0.95rem;
+transition:0.3s;
+}
+
+.links a:hover{
+opacity:0.7;
+}
+
+.menu{
+display:none;
+font-size:1.5rem;
+cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:120px 20px;
+}
+
+.hero p{
+max-width:600px;
+margin:0 auto 30px auto;
+font-size:1.1rem;
+}
+
+/* BUTTON */
+
+.btn{
+background:var(--dourado);
+color:white;
+border:none;
+padding:14px 26px;
+font-size:1rem;
+border-radius:6px;
+cursor:pointer;
+transition:0.25s;
+}
+
+.btn:hover{
+transform:translateY(-2px);
+box-shadow:0 5px 12px rgba(0,0,0,0.15);
+}
+
+/* CARDS */
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+/* BOOK GRID */
+
+.books{
+display:grid;
+grid-template-columns:1fr;
+gap:25px;
+margin-top:40px;
+}
+
+/* FEATURES */
+
+.feature{
+background:white;
+padding:20px;
+margin-bottom:15px;
+border-radius:8px;
+}
+
+/* TESTIMONIALS */
+
+#depoimentos .card{
+text-align:center;
+}
+
+/* PLANS */
+
+.plans{
+display:grid;
+grid-template-columns:1fr;
+gap:25px;
+margin-top:40px;
+}
+
+.plan{
+background:white;
+padding:30px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.plan p{
+margin:15px 0;
+font-size:1.2rem;
+font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+background:var(--marrom);
+color:white;
+text-align:center;
+padding:40px 20px;
+margin-top:60px;
+}
+
+/* RESPONSIVO */
+
+@media(min-width:768px){
+
+.books{
+grid-template-columns:repeat(3,1fr);
+}
+
+.plans{
+grid-template-columns:repeat(3,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.links{
+display:none;
+flex-direction:column;
+background:var(--marrom);
+position:absolute;
+top:70px;
+right:0;
+width:200px;
+padding:20px;
+}
+
+.links.show{
+display:flex;
+}
+
+.menu{
+display:block;
+}
+
+}
