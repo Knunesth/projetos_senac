@@ -10,7 +10,7 @@ O projeto foi criado com foco em **UX (User Experience)**, **responsividade** e 
 
 Acesse o projeto publicado:
 
-🔗 https://SEUUSUARIO.github.io/clube-do-livro
+🔗 https://Knunesth.github.io/clube-do-livro
 
 ---
 
